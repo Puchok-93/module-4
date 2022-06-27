@@ -1,0 +1,79 @@
+.about-museum {
+    display: grid;
+    grid-template-columns: 59% 41%;
+}
+
+.about-museum__description {
+    width: 100%;
+    max-width: 720px;
+    padding: 28px 31px;
+}
+
+.about-museum__description p {
+    font-family: 'IBMPlexSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.8);
+
+    margin: 0 0 24px 0;
+}
+
+@media(max-width: 1440px) {
+    .about-museum__description {
+        max-width: 543px;
+        padding: 22px 19px;
+    }
+
+    .about-museum__description p {
+        font-size: 23px;
+        line-height: 28px;
+        margin: 0 0 20px 0;
+    }
+}
+
+@media(max-width: 1366px) {
+    .about-museum__description {
+        max-width: 561px;
+        padding: 22px 19px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .about-museum__description {
+        max-width: 443px;
+        padding: 24px 20px;
+    }
+
+    .about-museum__description p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media(max-width: 768px) {
+    .about-museum {
+        grid-template-columns: 100%;
+    }
+    
+    .about-museum__image {
+        width: 100%;
+    }
+
+    .about-museum__description {
+        max-width: 408px;
+        padding: 32px 0;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .about-museum__description {
+        padding: 19px 0;
+    }
+
+    .about-museum__description p {
+        margin: 0;
+    }
+}

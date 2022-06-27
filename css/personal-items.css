@@ -1,0 +1,55 @@
+/* Personal */
+
+.personal-items {
+    display: flex;
+
+}
+
+.personal-items__item {
+    width: 100%;
+    max-width: 573px;
+    margin: 0 20px 0 0px;
+}
+
+@media(max-width: 1440px) {
+    .personal-items__item {
+        max-width: 440px;
+        margin: 0 15px 0 0px;
+    }
+
+    .personal-items__item:last-of-type {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .tabcontainer-content--personal {
+        padding: 0 0 287px 0;
+    }
+    
+    .personal-items__item {
+        margin: 0 10px 0 0;
+    }
+    
+    .personal-items__item:last-of-type {
+        margin: 0;
+    }
+}
+
+  @media (max-width: 768px) {
+    .tabcontainer-content--personal {
+        padding: 0 0 0 0;
+    }
+
+    .personal-items {
+       flex-direction: column;
+    }
+
+    .personal-items__item {
+        margin: 0 auto 25px;
+    }
+    
+    .personal-items__item:last-of-type {
+        margin: 0 auto;
+    }
+  }

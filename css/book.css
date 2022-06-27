@@ -1,0 +1,14 @@
+.scroller {
+    padding: 0;
+}
+
+.scroller div {
+    max-width: 1740px;
+    height: 700px;
+}
+
+.scroller img {
+    width: 100%;
+    height: auto;
+    max-height: 855px;
+}

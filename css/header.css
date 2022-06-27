@@ -1,0 +1,107 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+  
+  /* навигация */
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.8% 0% 1% 0;
+    border-bottom: 3px solid #524A4A;
+  }
+  
+  .menu__logo-link {
+    font-family: 'IBMPlexSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: #524A4A;
+  }
+  
+  .menu__burger {
+    z-index: 150;
+  }
+  
+  .burger {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+  }
+  
+  .menu__burger svg {
+    width: 79px;
+    height: 30px;
+    stroke: #524A4A;
+  }
+  
+  .menu--open .menu__burger svg{
+    stroke: #ffffff;
+  }
+ 
+  @media(max-width: 1440px) {
+    .header__nav {
+      padding: 4.2% 0% 1.4% 0;
+    }
+
+    .burger {
+      margin: -8px 0 0 0;
+    }
+
+    .menu__logo-link {
+      font-size: 23px;
+      line-height: 30px;
+    }
+  }
+
+  @media(max-width: 1366px) {
+    .header__nav {
+      padding: 4.5% 0% 1.4% 0;
+    }
+  }
+
+  @media(max-width: 1024px) {
+    .header__nav {
+      padding: 5.3% 0% 1.7% 0;
+    }
+  }
+
+  @media(max-width: 768px) {
+    .header__nav {
+      padding: 7.3% 0% 2.9% 0;
+    }
+  }
+
+  @media(max-width: 414px) {
+    .header__nav {
+      padding: 8.4% 0% 3.8% 0;
+    }
+
+    .menu__logo-link {
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    .burger {
+      margin: -5px 0 0 0;
+    }
+
+    .menu__burger,
+    .menu__burger svg {
+      width: 53px;
+      height: 23px;
+   }
+
+  }

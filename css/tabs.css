@@ -1,0 +1,139 @@
+/* Табы */
+
+.tabcontainer {
+    display: flex;
+}
+
+.tabcontainer-content {
+    width: 100%;
+    max-width: 1330px;
+    outline: 1px solid lime;
+    padding: 27px 0 0;
+    box-sizing: border-box;
+}
+
+.tabcontent {
+    padding: 0 107px 0;
+}
+.tabcontainer-content--personal {
+    padding: 0 0 235px 0;
+}
+
+.tabcontent--slider {
+    padding: 0;
+}
+
+.tabheader {
+    width: 100%;
+    max-width: 425px;
+    outline: 1px solid pink;
+    border-left: 3px solid #524A4A;
+
+    padding: 27px 30px 0;
+    box-sizing: border-box;
+}
+
+.tabheader-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 505px;
+}
+
+.tabheader__item {
+    font-family: 'IBMPlexSans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #524A4A;
+    margin: 0 0 24px 0;
+    cursor: pointer;
+}
+
+.tabheader__item--active {
+    color: #fff;
+}
+
+
+
+@media(max-width: 1440px) {
+
+    .tabheader {
+        max-width: 298px;
+        padding: 22px 13px 0;
+    }
+
+    .tabheader__item {
+        font-size: 23px;
+        line-height: 28px;
+        margin: 0 0 18px 0;
+    }
+}
+
+@media(max-width: 1366px) {
+    .tabheader {
+        padding: 22px 20px 0;
+    }
+}
+  
+@media(max-width: 1024px) {
+    .tabcontainer {
+        flex-direction: column;
+    }
+
+    .tabheader {
+        max-width: 425px;
+        border-left: none;
+        padding: 0;
+    }
+
+    .tabcontainer-content {
+        padding: 20px 0 0;
+    }
+
+    .tabheader-items {
+        width: 100%;
+        max-width: 505px;
+    }
+
+    .tabheader__item {
+        font-size: 23px;
+        line-height: 28px;
+        margin: 0 0 19px 0;
+    }
+}
+  
+  @media (max-width: 768px) {
+    .tabcontainer-content {
+        order: 2;
+    }
+
+    .tabheader {
+        max-width: 425px;
+        padding: 12px 2px 0;
+    }
+
+    .tabcontainer-content {
+        padding: 20px 0 0;
+    }
+
+    .tabheader-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 505px;
+    }
+
+    .tabheader__item {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 0 0 8px 29px;
+    }
+
+    .tabheader__item:first-child,
+    .tabheader__item:nth-child(4)  {
+        margin-left: 0;
+    }
+}

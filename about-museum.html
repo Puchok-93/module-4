@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/wrapper.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/about-musem.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__nav menu">
+                <a href="index.html" class="menu__logo-link">музей тюремной татуировки</a>
+        
+            <button class="menu__burger burger" type="button">
+                <svg viewBox="0 0 79 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 28H77" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M2 15H77" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M2 2H77" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </button>
+        
+            <nav class="menu__nav main-nav">
+                <div class="main-nav__wrap">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a href="about-museum.html" class="main-nav__link">О музее</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="map.html" class="main-nav__link">Карта помещения</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="showpieces.html" class="main-nav__link">Экспонаты</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="book.html" class="main-nav__link">Книги</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="quiz.html" class="main-nav__link">Конструктор наколки</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="wrapper">
+            <div class="about-museum">
+                <div class="about-museum__image">
+                    <picture>
+                        <source media="(max-width: 414px)" srcset="img/museum-414.png">
+                        <source media="(max-width: 768px)" srcset="img/museum-768.png">
+                        <source media="(max-width: 1024px)" srcset="img/museum-1024.png">
+                        <source media="(max-width: 1366px)" srcset="img/museum-1366.png">
+                        <source media="(max-width: 1440px)" srcset="img/museum-1440.png">
+                        <img srcset="img/museum.png" alt="">
+                    </picture>
+                </div>
+                <div class="about-museum__description">
+                    <p>Всё началось с тематических вечеров в лингвистической школе тюремного жаргона. 
+                        К ученикам пришел бывший зек Сёма-кольщик. 
+                        Его работы, как и рассказы о тюремном быте, впечатлили ребят. 
+                        Тогда было решено сделать выставку в здании школы. 
+                        Локальная эскпозиция фотографий и рисунков переросла в масштабное арт-пространство</p>
+                    <p>
+                        Музей тюремного тату — это выставочное пространство, в котором сконцентрирована культура «подпольного мира». 
+                        Мы даём зрителю возможность непредвзято взгля-нуть на ожесточенные нравы и непростые судьбы заключенных. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer-content">
+                <address>ул. малая пионерская, 12</address>
+                <a href="mailto:kzdorenko@inbox.ru">kzdorenko@inbox.ru</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+</body>
+</html>
